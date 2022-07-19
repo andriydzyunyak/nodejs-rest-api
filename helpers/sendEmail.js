@@ -1,9 +1,8 @@
 /* eslint-disable no-useless-catch */
 const sgMail = require("@sendgrid/mail");
 require("dotenv").config();
-const { SENDER_EMAIL } = process.env;
 
-const { SENDGRID_API_KEY } = process.env;
+const { SENDGRID_API_KEY, SENDER_EMAIL } = process.env;
 
 sgMail.setApiKey(SENDGRID_API_KEY);
 
